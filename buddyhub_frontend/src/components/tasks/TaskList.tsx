@@ -1,5 +1,5 @@
 import { DndContext, DragEndEvent } from '@dnd-kit/core'
-import { Project, TaskProject, TaskStatus } from '@/types/index'
+import { Project, Task, TaskProject, TaskStatus } from '@/types/index'
 import TaskCard from './TaskCard'
 import { statusTranslations } from '@/locales/es'
 import DropTask from './DropTask'
@@ -11,6 +11,7 @@ statusTranslations
 
 type TaskListProps = {
     tasks: TaskProject[]
+    //tasks: Task[]
     canEdit: boolean
 }
 
